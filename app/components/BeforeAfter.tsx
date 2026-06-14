@@ -141,7 +141,7 @@ export function BeforeAfter() {
         <div className="mt-12 grid gap-6 sm:gap-8 lg:grid-cols-2">
           {CASES.map((c, i) => (
             <Reveal key={c.title} delay={i * 0.1}>
-              <figure className="rounded-[2rem] border hairline bg-[var(--color-surface)] p-4 shadow-soft sm:p-5">
+              <figure className="mx-auto w-full max-w-[70%] rounded-[2rem] border hairline bg-[var(--color-surface)] p-4 shadow-soft sm:p-5">
                 <RevealSlider img={c.img} concern={c.concern} />
                 <figcaption className="mt-4 flex items-center justify-between gap-3 px-1">
                   <span className="font-serif text-xl font-medium">{c.title}</span>
